@@ -1,0 +1,182 @@
+:root {
+  --mint-1: #9edec6;
+  --mint-2: #7cd2b3;
+  --mint-3: #5ac69f;
+  --mint-4: #3eb489;
+  --mint-5: #32926f;
+  --mint-6: #267055;
+  --mint-7: #1b4e3b;
+}
+
+body {
+  background: linear-gradient(-45deg, var(--mint-2), var(--mint-1));
+  margin: 0;
+  height: 100vh;
+}
+
+#searchbar {
+  margin: 8px auto 0;
+  grid-column: 1 / 3;
+  width: 30%;
+  border-style: solid;
+  border-color: var(--mint-5);
+  border-width: 2px;
+  border-radius: 10px;
+  background-color: var(--mint-3);
+  color: var(--mint-7);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  outline: none;
+}
+
+#searchbar::placeholder {
+  color: var(--mint-1);
+}
+
+/* Fieldsets container */
+.showcase {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 80%;
+  max-width: 1000px;
+  height: 50%;
+
+  background: var(--mint-3);
+  border-radius: 10px;
+  padding: 0 8px 10px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 8px;
+}
+
+@media screen and (max-width: 800px) {
+  #searchbar {
+    grid-column: 1;
+  }
+  .showcase {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr;
+  }
+}
+
+.showcase > fieldset {
+  margin: 0;
+  border-color: var(--mint-4);
+  border-style: solid;
+  border-radius: 6px;
+  border-width: 6px;
+  overflow-y: auto;
+  max-height: 100%;
+}
+/* Fieldset title */
+.showcase > fieldset > legend {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #eee;
+  cursor: pointer;
+}
+.showcase > fieldset > legend:active {
+  color: var(--mint-1);
+}
+
+.row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4rem 1fr auto;
+  align-items: center;
+  border-radius: 10px;
+  z-index: 0;
+  overflow-x: hidden;
+}
+.row:hover {
+  background: var(--mint-2);
+}
+/* Icon name */
+.row > span {
+  font-family: "Poppins", serif;
+  color: var(--mint-6);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: 600;
+}
+/* Copy button */
+.copy {
+  font-size: 1.4rem;
+  color: var(--mint-5);
+  margin-right: 0.4rem;
+  padding: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.copy:hover {
+  background: var(--mint-1);
+}
+
+.copy:active {
+  background: var(--mint-4);
+}
+
+/* Icons */
+.row > i:first-child {
+  padding: 0.2rem 0.4rem;
+  font-size: 2.5rem;
+  color: var(--mint-5);
+}
+
+#HelpButton {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 2rem;
+  color: var(--mint-7);
+  cursor: pointer;
+}
+
+#HelpButton:hover {
+  color: var(--mint-6);
+}
+
+#HelpDialog {
+  padding: 12px;
+  outline: none;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 10px;
+  border-color: var(--mint-4);
+  background: var(--mint-1);
+}
+
+#HelpDialog > div {
+  display: grid;
+}
+
+#HelpDialog > img {
+  max-width: 100%;
+}
+
+#HelpDialogCloseButton {
+  justify-self: end;
+  background: var(--mint-3);
+  padding: 3px;
+  border-radius: 50%;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+#HelpDialogCloseButton:hover {
+  background: var(--mint-2);
+}
+
+/* Google icons text selection fix */
+.material-icons {
+  user-select: none;
+}
