@@ -149,11 +149,12 @@ body {
   display: grid;
 }
 
-#HelpDialog > img {
+#HelpDialog > div > img {
   max-width: 100%;
 }
 
 #HelpDialogCloseButton {
+  color: var(--mint-5);
   justify-self: end;
   background: var(--mint-3);
   padding: 3px;
