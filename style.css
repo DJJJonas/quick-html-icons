@@ -43,7 +43,7 @@ body {
 
   width: 80%;
   max-width: 1000px;
-  height: 50%;
+  height: 70%;
 
   background: var(--mint-3);
   border-radius: 10px;
@@ -53,16 +53,6 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
   gap: 8px;
-}
-
-@media screen and (max-width: 800px) {
-  #searchbar {
-    grid-column: 1;
-  }
-  .showcase {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 1fr;
-  }
 }
 
 .showcase > fieldset {
@@ -179,4 +169,19 @@ body {
 /* Google icons text selection fix */
 .material-icons {
   user-select: none;
+}
+
+@media screen and (max-width: 800px) {
+  #searchbar {
+    grid-column: 1;
+  }
+  .showcase {
+    height: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr;
+  }
+
+  .showcase > fieldset > legend {
+    font-size: 1.4rem;
+  }
 }
