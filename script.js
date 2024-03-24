@@ -1754,7 +1754,7 @@ function new_fa4Copy(name) {
   const i = new_fa4Icon("fa-copy");
   i.classList.add("copy");
   i.onclick = () => {
-    const tag = `<i class="${name}"></i>`;
+    const tag = `<i class="fa ${name}"></i>`;
     navigator.clipboard.writeText(tag);
   };
   return i;
