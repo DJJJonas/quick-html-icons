@@ -3,7 +3,7 @@
   <img src="./favicon.png" width="200" />
   <br>
   Quick HTML Icons
-  <h4 align="center">A quick way of getting icons on your site</h4>
+  <h4 align="center">A quick way of getting icons to your website</h4>
 </h1>
 <p align="center">
   <img src="https://img.shields.io/badge/icons-1715-blue" />
