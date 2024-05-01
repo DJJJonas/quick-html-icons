@@ -17,12 +17,12 @@ This project is a little handy website made for quickly getting some icons for y
 
 ## How to use
 
+<img align="right" src="./img/help.png" width="400" />
+
 1. Click on "Font Awesome 4" or "Google", it copies a `link` tag to your clipboard
 2. Paste the link tag inside the head tag of your html
 3. Click on the copy button of any icon you like, it copies the `i` tag of the icon
 4. Paste it in your HTML
-
-<img src="./img/help.png" width="400" />
 
 > **Note**
 > Font Awesome 4 name their icons as of what they are (e.g. a heart icon is named "fa-heart"),
